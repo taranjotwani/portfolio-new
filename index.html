@@ -1,0 +1,666 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Taran Jotwani | Web Specialist</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "tertiary-container": "#bf3003",
+                            "on-secondary-container": "#511500",
+                            "surface-container": "#201f1f",
+                            "primary-fixed-dim": "#b7c4ff",
+                            "on-primary-fixed": "#001452",
+                            tertiary: "#ffb4a1",
+                            "outline-variant": "#434656",
+                            "on-error": "#690005",
+                            "on-surface": "#e5e2e1",
+                            "on-secondary": "#5c1900",
+                            secondary: "#ffb59c",
+                            "inverse-primary": "#004ced",
+                            "surface-dim": "#131313",
+                            "primary-container": "#0052ff",
+                            "primary-fixed": "#dde1ff",
+                            "inverse-on-surface": "#313030",
+                            "on-tertiary-container": "#ffddd5",
+                            "on-primary": "#002682",
+                            "on-tertiary-fixed": "#3c0800",
+                            "on-surface-variant": "#c3c5d9",
+                            "on-primary-fixed-variant": "#0038b6",
+                            "secondary-fixed": "#ffdbcf",
+                            "surface-container-highest": "#353534",
+                            "secondary-container": "#fa5c1c",
+                            "error-container": "#93000a",
+                            "surface-variant": "#353534",
+                            "tertiary-fixed": "#ffdbd2",
+                            outline: "#8d90a2",
+                            "surface-container-high": "#2a2a2a",
+                            "tertiary-fixed-dim": "#ffb4a1",
+                            "secondary-fixed-dim": "#ffb59c",
+                            primary: "#b7c4ff",
+                            "on-tertiary-fixed-variant": "#891e00",
+                            "on-secondary-fixed": "#390c00",
+                            "surface-bright": "#393939",
+                            "on-tertiary": "#611300",
+                            "on-secondary-fixed-variant": "#832700",
+                            "on-error-container": "#ffdad6",
+                            "surface-tint": "#b7c4ff",
+                            surface: "#131313",
+                            error: "#ffb4ab",
+                            background: "#131313",
+                            "on-primary-container": "#dfe3ff",
+                            "on-background": "#e5e2e1",
+                            "surface-container-lowest": "#0e0e0e",
+                            "surface-container-low": "#1c1b1b",
+                            "inverse-surface": "#e5e2e1",
+                        },
+                        fontFamily: {
+                            headline: ["Newsreader"],
+                            body: ["Manrope"],
+                            label: ["Manrope"],
+                        },
+                        borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                    "FILL" 0,
+                    "wght" 400,
+                    "GRAD" 0,
+                    "opsz" 24;
+            }
+            .editorial-shadow {
+                box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.4);
+            }
+            .primary-gradient {
+                background: linear-gradient(135deg, #b7c4ff 0%, #0052ff 100%);
+            }
+        </style>
+    </head>
+    <body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+        <!-- Branded Header -->
+        <header class="w-full py-8 px-8 md:px-12 max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-2xl rotate-45" data-icon="square">square</span>
+                <div class="font-headline font-bold text-2xl tracking-tighter text-on-surface">Taran Jotwani</div>
+            </div>
+            <!-- <a
+                class="font-label text-xs uppercase tracking-[0.2em] text-on-surface/60 hover:text-primary transition-colors flex items-center gap-2 group"
+                href="#"
+            >
+                Download Resume
+                <span
+                    class="material-symbols-outlined text-lg group-hover:translate-y-0.5 transition-transform"
+                    data-icon="arrow_downward"
+                    >arrow_downward</span
+                >
+            </a> -->
+        </header>
+        <main class="pt-12 pb-12 px-6 md:px-12 max-w-7xl mx-auto">
+            <!-- Hero Section -->
+            <header class="mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-8">
+                        <span class="font-label text-secondary uppercase tracking-[0.3em] text-xs font-bold mb-4 block"
+                            >Web Specialist</span
+                        >
+                        <h1 class="font-headline text-6xl md:text-8xl italic tracking-tighter mb-8 max-w-4xl">
+                            Engineering <span class="text-primary">high-traffic conversion</span> digital storefronts.
+                        </h1>
+                        <p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed">
+                            Senior Fullstack Developer with a 14-year history of leading cross-functional teams to build
+                            and scale high-impact software. Expert at translating complex requirements into clean,
+                            maintainable solutions using AEM, Java, Spring, and modern front-end frameworks
+                        </p>
+                    </div>
+                    <div class="lg:col-span-4 relative group">
+                        <div class="absolute inset-4 border border-primary/30 -translate-x-8 translate-y-8 z-0"></div>
+                        <div
+                            class="relative z-10 aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden editorial-shadow"
+                        >
+                            <img
+                                alt="Professional Portrait"
+                                class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                                src="picture_color.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Connectivity Bar (Prominent Socials) -->
+            <div class="max-w-xl">
+                <span class="font-label text-secondary uppercase tracking-widest text-xs font-bold mb-2 block"
+                    >Lets Connect....</span
+                >
+            </div>
+            <section class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 p-px overflow-hidden rounded-lg">
+                <a
+                    class="group flex items-center justify-between p-12 bg-surface-container-low hover:bg-surface-container-high transition-all duration-300"
+                    href="https://www.linkedin.com/in/taranjotwani/"
+                >
+                    <div class="flex flex-col">
+                        <span class="font-label text-xs uppercase text-outline tracking-widest mb-2"
+                            >Professional Network</span
+                        >
+                        <h3
+                            class="font-headline text-4xl italic text-on-surface group-hover:text-primary transition-colors"
+                        >
+                            LinkedIn
+                        </h3>
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-4xl text-primary group-hover:translate-x-2 transition-transform"
+                        data-icon="arrow_forward"
+                        >arrow_forward</span
+                    >
+                </a>
+                <a
+                    class="group flex items-center justify-between p-12 bg-surface-container-low hover:bg-surface-container-high transition-all duration-300"
+                    href="https://github.com/taranjotwani"
+                >
+                    <div class="flex flex-col">
+                        <span class="font-label text-xs uppercase text-outline tracking-widest mb-2"
+                            >Open Source &amp; Code</span
+                        >
+                        <h3
+                            class="font-headline text-4xl italic text-on-surface group-hover:text-secondary transition-colors"
+                        >
+                            GitHub
+                        </h3>
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-4xl text-secondary group-hover:translate-x-2 transition-transform"
+                        data-icon="arrow_forward"
+                        >arrow_forward</span
+                    >
+                </a>
+            </section>
+            <!-- Commerce Engineering Stack (Capabilities Style Grid) -->
+            <section class="mb-20">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+                    <div class="max-w-xl">
+                        <span class="font-label text-secondary uppercase tracking-widest text-xs font-bold mb-2 block"
+                            >The Architecture</span
+                        >
+                        <h2 class="font-headline text-5xl italic tracking-tight">Engineering Stack</h2>
+                    </div>
+                    <p class="font-body text-on-surface-variant max-w-xs text-sm">
+                        A deliberate selection of technologies focused on speed, security, and developer experience.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="code"
+                            >code</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">Java</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Enterprise-grade backend development for scalable and secure applications.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="web"
+                            >web</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">AEM</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Adobe Experience Manager solutions for content-rich, high-performance websites.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="javascript"
+                            >javascript</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">Node.js</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Event-driven server-side runtime for APIs, tooling, and integration layers.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span
+                            class="material-symbols-outlined text-primary mb-6 block text-3xl"
+                            data-icon="deployed_code"
+                            >deployed_code</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">Spring Boot</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Production-ready Java microservice development with rapid setup and deployment.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="hub"
+                            >hub</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">Microservices</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Distributed architectures designed for resilience, independent scaling, and agility.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span
+                            class="material-symbols-outlined text-primary mb-6 block text-3xl"
+                            data-icon="deployed_code"
+                            >deployed_code</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">Docker</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Containerized application delivery for consistent runtime environments.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="swap_horiz"
+                            >swap_horiz</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">Service Queues</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Asynchronous messaging to decouple services and improve system throughput.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="database"
+                            >database</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">Database</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Robust relational and NoSQL data modeling, indexing, and query optimization.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="palette"
+                            >palette</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">CSS</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Responsive, accessible UI styling with modern layout systems and design consistency.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="cloud"
+                            >cloud</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">AWS</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Cloud-native deployment and operations across compute, storage, and networking.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="autorenew"
+                            >autorenew</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">CI/CD</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Automated pipelines for testing, quality gates, and reliable continuous delivery.
+                        </p>
+                    </div>
+                    <!-- Stack Item -->
+                    <div
+                        class="bg-surface-container-low p-8 rounded hover:bg-surface-container-high transition-colors border border-white/5"
+                    >
+                        <span class="material-symbols-outlined text-primary mb-6 block text-3xl" data-icon="device_hub"
+                            >device_hub</span
+                        >
+                        <h4 class="font-label font-bold text-on-surface mb-2">Git</h4>
+                        <p class="text-sm text-on-surface-variant">
+                            Source control workflows for collaboration, versioning, and release confidence.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Experience Grid (Companies Worked With) -->
+            <section class="mb-20">
+                <div class="mb-16">
+                    <span class="font-label text-primary uppercase tracking-widest text-xs font-bold mb-2 block"
+                        >Experience</span
+                    >
+                    <h2 class="font-headline text-5xl italic tracking-tight">Companies I Have Worked With</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Experience Box -->
+                    <article
+                        class="bg-surface-container-low p-10 rounded-lg hover:bg-surface-container-high transition-all duration-500 border border-white/5"
+                    >
+                        <div class="flex items-start justify-between gap-6 mb-6">
+                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="storefront"
+                                >storefront</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >2020 - Present</span
+                            >
+                        </div>
+                        <h3 class="font-headline text-3xl mb-2">Herschel Supply Company</h3>
+                        <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">
+                            Senior Fullstack Developer
+                        </p>
+                        <p class="font-label text-xs uppercase tracking-widest text-outline mb-6">Vancouver, Canada</p>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Leading fullstack delivery for global e-commerce at Herschel, building high-availability
+                            features with React, Java 17, AEM, and Elastic Path. Architected secure Spring Boot
+                            microservices and API gateway flows on AWS, while optimizing persistence with
+                            Hibernate/PostgreSQL and scaling async workflows through SQS/SNS and Dockerized CI/CD.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-8">
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Java 17</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >AEM</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Spring Boot</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >AWS</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >PostgreSQL</span
+                            >
+                        </div>
+                    </article>
+
+                    <!-- Experience Box -->
+                    <article
+                        class="bg-surface-container-low p-10 rounded-lg hover:bg-surface-container-high transition-all duration-500 border border-white/5"
+                    >
+                        <div class="flex items-start justify-between gap-6 mb-6">
+                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="language"
+                                >language</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >2016 - 2020</span
+                            >
+                        </div>
+                        <h3 class="font-headline text-3xl mb-2">Clearly Contacts Ltd (now EssilorLuxottica Canada Inc.)</h3>
+                        <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">
+                            Senior Web Developer
+                        </p>
+                        <p class="font-label text-xs uppercase tracking-widest text-outline mb-6">Vancouver, Canada</p>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Delivered responsive AEM 6.2 experiences and maintained high-traffic global commerce
+                            applications with React and Elastic Path. Designed modular Spring Boot middleware for core
+                            service operations and led migration from session-based systems to Java microservices,
+                            enabling stronger scalability and stable zero-downtime deployment practices.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-8">
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >React</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >AEM 6.2</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Spring Boot</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Elastic Path</span
+                            >
+                        </div>
+                    </article>
+
+                    <!-- Experience Box -->
+                    <article
+                        class="bg-surface-container-low p-10 rounded-lg hover:bg-surface-container-high transition-all duration-500 border border-white/5"
+                    >
+                        <div class="flex items-start justify-between gap-6 mb-6">
+                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="groups"
+                                >groups</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >2014 - 2016</span
+                            >
+                        </div>
+                        <h3 class="font-headline text-3xl mb-2">Agranee Solutions Pvt. Ltd.</h3>
+                        <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">
+                            Project Lead
+                        </p>
+                        <p class="font-label text-xs uppercase tracking-widest text-outline mb-6">Vancouver, Canada</p>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Directed cross-functional engineering and QA teams across multiple agile sprints, improving
+                            API performance and delivery consistency. Designed and deployed backend architecture using
+                            Java, Spring, AWS, and PostgreSQL with strong availability targets, and modernized platform
+                            reliability through database migration, REST integration, and Git-enabled CI/CD workflows.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-8">
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Java</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Spring</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >AWS</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >PostgreSQL</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Git</span
+                            >
+                        </div>
+                    </article>
+
+                    <!-- Experience Box -->
+                    <article
+                        class="bg-surface-container-low p-10 rounded-lg hover:bg-surface-container-high transition-all duration-500 border border-white/5"
+                    >
+                        <div class="flex items-start justify-between gap-6 mb-6">
+                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="account_tree"
+                                >account_tree</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >2014 - 2015</span
+                            >
+                        </div>
+                        <h3 class="font-headline text-3xl mb-2">NTT DATA Corporation</h3>
+                        <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">
+                            Java Consultant
+                        </p>
+                        <p class="font-label text-xs uppercase tracking-widest text-outline mb-6">Halifax, Canada</p>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Built and integrated SOAP and REST services using Spring Framework with enterprise message
+                            broker flows for reliable backend communication. Orchestrated multi-system service
+                            interactions through Spring Integration, documented APIs with Swagger, and upheld code
+                            quality through structured GitFlow collaboration and peer review practices.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-8">
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Spring</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >SOAP</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >REST</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Swagger</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >GitFlow</span
+                            >
+                        </div>
+                    </article>
+
+                    <!-- Experience Box -->
+                    <article
+                        class="bg-surface-container-low p-10 rounded-lg hover:bg-surface-container-high transition-all duration-500 border border-white/5 md:col-span-2"
+                    >
+                        <div class="flex items-start justify-between gap-6 mb-6">
+                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="settings"
+                                >settings</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >2012 - 2014</span
+                            >
+                        </div>
+                        <h3 class="font-headline text-3xl mb-2">Verizon Wireless</h3>
+                        <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">
+                            Java Developer
+                        </p>
+                        <p class="font-label text-xs uppercase tracking-widest text-outline mb-6">Hyderabad, India</p>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            Developed Java middleware for billing and provisioning platforms using XSL/XSD contracts,
+                            service registries, and XML transformation pipelines with XSLT/JAXB. Contributed to robust
+                            engineering workflows with strong ALM discipline, while implementing high-volume data
+                            operations through DB2/Oracle procedures and iBatis-based persistence integration.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-8">
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Java</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >XSLT</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >JAXB</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >DB2</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >Oracle</span
+                            >
+                            <span
+                                class="bg-white/5 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-outline"
+                                >iBatis</span
+                            >
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Connect Section -->
+            <section class="mb-20 text-center py-24 bg-surface-container-low rounded-xl border border-white/5">
+                <span class="font-label text-secondary uppercase tracking-[0.4em] text-xs font-bold mb-6 block"
+                    >Ready to Scale?</span
+                >
+                <h2 class="font-headline text-5xl md:text-7xl italic tracking-tighter mb-12">
+                    Let's build something <br />
+                    exceptional together.
+                </h2>
+                <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                    <a
+                        class="font-headline text-2xl italic text-primary hover:text-secondary transition-colors underline underline-offset-8"
+                        href="mailto:taranjotwani@gmail.com"
+                        >taranjotwani@gmail.com</a
+                    >
+                    <span class="hidden md:block text-outline-variant">/</span>
+                    <div class="flex gap-8">
+                        <a class="group flex items-center gap-2" href="https://www.linkedin.com/in/taranjotwani/">
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors"
+                                data-icon="link"
+                                >link</span
+                            >
+                            <span
+                                class="font-label text-sm uppercase tracking-widest text-on-surface-variant group-hover:text-on-surface transition-colors"
+                                >LinkedIn</span
+                            >
+                        </a>
+                        <a class="group flex items-center gap-2" href="https://github.com/taranjotwani">
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors"
+                                data-icon="terminal"
+                                >terminal</span
+                            >
+                            <span
+                                class="font-label text-sm uppercase tracking-widest text-on-surface-variant group-hover:text-on-surface transition-colors"
+                                >GitHub</span
+                            >
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer
+            class="w-full py-12 bg-[#1c1b1b] dark:bg-[#1c1b1b] flex flex-col md:flex-row justify-between items-center px-12 border-t border-white/5"
+        >
+            <div class="text-[#e5e2e1] font-headline font-bold mb-4 md:mb-0">Taran Jotwani</div>
+            <div class="font-['Manrope'] text-sm tracking-wide text-[#e5e2e1]/40 flex gap-12">
+                <a class="hover:text-[#ffb59c] transition-colors duration-300" href="https://www.linkedin.com/in/taranjotwani/">LinkedIn</a>
+                <a class="hover:text-[#ffb59c] transition-colors duration-300" href="https://github.com/taranjotwani">GitHub</a>
+            </div>
+            <div class="font-['Manrope'] text-sm tracking-wide text-[#e5e2e1]/40 mt-8 md:mt-0">
+                © 2026 Taran Jotwani. All rights reserved.
+            </div>
+        </footer>
+    </body>
+</html>
